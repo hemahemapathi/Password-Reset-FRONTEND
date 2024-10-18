@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6f2ff;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #b3d9ff 0%, #bad4e0 100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-title {
+    text-align: center;
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6f2ff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4d94ff;
+    transform: scale(1.02);
+}
+
+.login-button, .signup-button, .forgot-password-button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+    margin-bottom: 0.5rem;
+}
+
+.login-button {
+    background-color: #4d94ff;
+    color: #003366;
+}
+
+.login-button:hover {
+    background-color: #3385ff;
+    transform: translateY(-2px);
+}
+
+.signup-button, .forgot-password-button {
+    background-color: #cce6ff;
+    color: #003366;
+}
+
+.signup-button:hover, .forgot-password-button:hover {
+    background-color: #b3d9ff;
+    transform: translateY(-2px);
+}
+
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #003366;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.notification {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.notification.success {
+    background-color: #99ffcc;
+    color: #006644;
+}
+
+.notification.error {
+    background-color: #ffcccc;
+    color: #990000;
+}
+
+.notification.info {
+    background-color: #ccf2ff;
+    color: #006699;
+}
